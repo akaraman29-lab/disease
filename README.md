@@ -1,23 +1,30 @@
 # Transmission Inference Validation — SARS-CoV-2
 
-A simulation framework for benchmarking a genomic transmission inference model (Jacob's model, from the Danish Transmission project) against a synthetic outbreak where the ground truth is known.
+A simulation framework for benchmarking the genomic transmission inference method developed by the [NERDS research group](https://nerds.itu.dk/) against a synthetic outbreak where the ground truth is known. The method is described in the preprint:
+
+> Curran-Sebastian et al. (2026). *Transmission Networks and Intervention Effects From SARS-CoV-2 Genomic and Social Network Data in Denmark* (not yet peer-reviewed). [medrxiv.org/content/10.64898/2026.01.08.26343683v1](https://www.medrxiv.org/content/10.64898/2026.01.08.26343683v1)
 
 ---
+
+## Background
+
+The NERDS group's inference method takes genomic sequences from positive COVID-19 tests, each with an associated collection time t_i, and infers which pairs (sequence i, t_i) and (sequence j, t_j) are close enough — genomically and temporally — to represent a plausible infector-infectee link. These inferred pairs are then used for detailed statistical analyses of how an epidemic spreads through a population.
+
+This project evaluates that method's performance: when does it work well, and when does it break down? Because ground truth is unknowable in real outbreak data, we simulate a synthetic epidemic where we control everything.
 
 ## What this does
 
-Since ground truth is unknowable in real outbreak data, we simulate a synthetic epidemic where we control everything:
-
 1. **Simulate the epidemic** — 10,000 cases with known true transmission pairs (who infected whom, when)
 2. **Simulate genome sequences** — using phastSim with SARS-CoV-2 parameters, so each case has a realistic viral genome
-3. **Run Jacob's model** — as if we didn't know the true pairs; let the model infer them
+3. **Run the NERDS inference method** — as if we didn't know the true pairs; let the model infer them
 4. **Measure performance** — compare inferred pairs against ground truth using precision, recall, F1, and several other metrics
+5. **Repeat across parameter space** — vary mutation rate, generation time, and R0 to map where the method succeeds and fails
 
-**Core finding:** SARS-CoV-2 sits in a difficult regime. At ~0.44 substitutions per transmission combined with R0=2, many cases look genomically identical within any 14-day window. The model finds the right person ~87% of the time in the candidate set (recall) but can only pick them out from ~130 equally plausible candidates (precision ~32%).
+**Core finding:** SARS-CoV-2 sits in a difficult regime. At ~0.44 substitutions per transmission combined with R0=2, many cases look genomically identical within any 14-day window. The method finds the right person ~87% of the time in the candidate set (recall) but can only pick them out from ~130 equally plausible candidates (precision ~32%).
 
 ---
 
-## Parameters (Denmark paper — Curran-Sebastian et al. 2026)
+## Parameters (Curran-Sebastian et al. 2026, preprint)
 
 | Parameter | Value |
 |---|---|
@@ -58,9 +65,9 @@ python simulate_mutations.py
 
 ### 3. `run_inference.py` — Transmission inference
 
-Adapter that runs Jacob's model on the simulated data. Loads the FASTA and ground truth, cleans sequences, compresses to variable sites only (~3,646 out of 29,903), precomputes Jacob's `scenario1_probability` scores into a 10×21 lookup table (reducing runtime from ~75 minutes to ~2 minutes), then for each case finds candidates within 14 days and Hamming ≤ 2, scores them, and saves results.
+Adapter that runs the NERDS inference method on the simulated data. Loads the FASTA and ground truth, cleans sequences, compresses to variable sites only (~3,646 out of 29,903), precomputes `scenario1_probability` scores (from Curran-Sebastian et al.) into a 10×21 lookup table (reducing runtime from ~75 minutes to ~2 minutes), then for each case finds candidates within 14 days and Hamming ≤ 2, scores them, and saves results.
 
-**Output:** `infectors_dict.pickle` (Jacob's exact format) and `inference_results.csv`.
+**Output:** `infectors_dict.pickle` (original format from Curran-Sebastian et al.) and `inference_results.csv`.
 
 ```
 python run_inference.py
@@ -148,7 +155,7 @@ These are not part of the main pipeline but were used during analysis.
 | `phastSim_output/*.fasta` | `simulate_mutations.py` | 10,000 SARS-CoV-2 genome sequences (29,903 bp) |
 | `sequence_index.csv` | `simulate_mutations.py` | case_id → sequence_id mapping |
 | `sequences_clean.fasta` | `run_inference.py` | Cleaned sequences (uppercase, non-ACTG → `-`) |
-| `infectors_dict.pickle` | `run_inference.py` | Jacob's format: `{strain: {candidate: (prob, (hamming, datediff))}}` |
+| `infectors_dict.pickle` | `run_inference.py` | Curran-Sebastian et al. format: `{strain: {candidate: (prob, (hamming, datediff))}}` |
 | `inference_results.csv` | `run_inference.py` | Per-case inferred vs true parent |
 | `evaluation_results.csv` | `evaluate_inference.py` | Per-case rank, top-k flags, reciprocal rank, normalised probability |
 
@@ -163,7 +170,7 @@ These are not part of the main pipeline but were used during analysis.
 - `hammingdist`
 - `tqdm`
 - [`phastSim`](https://github.com/NicolaDM/phastSim) (must be on PATH)
-- Jacob's `transmission_functions.py` — expected at `Danish_Transmission/src/network_construction/`
+- `transmission_functions.py` from Curran-Sebastian et al. — expected at `Danish_Transmission/src/network_construction/`
 
 ---
 
