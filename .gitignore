@@ -1,0 +1,21 @@
+# Results and outputs
+*.csv
+*.png
+*.pdf
+*.pickle
+*.fasta
+*.npz
+*.log
+
+# Simulation output folders
+phastSim_output/
+phastSim_sweep_tmp/
+sweep_2d_tmp/
+sweep_tmp_0.5/
+
+# Mac junk
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

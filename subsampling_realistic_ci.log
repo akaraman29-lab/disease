@@ -1,0 +1,147 @@
+Precomputing inference probability table ...
+Loading ground truth and sequences ...
+Building sequence matrix ...
+  10000 cases  |  3646 variable sites
+[1/140]  rate=5%  seed=   4  n=  500  infector_present=   21  TP=   14  FP=  373  FN=   1  P=0.036  R=0.667  F1=0.069
+[2/140]  rate=5%  seed=  42  n=  500  infector_present=   35  TP=   23  FP=  386  FN=   3  P=0.056  R=0.657  F1=0.104
+[3/140]  rate=5%  seed= 123  n=  500  infector_present=   33  TP=   18  FP=  374  FN=   2  P=0.046  R=0.545  F1=0.085
+[4/140]  rate=5%  seed= 456  n=  500  infector_present=   25  TP=   14  FP=  377  FN=   1  P=0.036  R=0.560  F1=0.067
+[5/140]  rate=5%  seed= 789  n=  500  infector_present=   26  TP=   15  FP=  380  FN=   0  P=0.038  R=0.577  F1=0.071
+[6/140]  rate=5%  seed=1234  n=  500  infector_present=   35  TP=   25  FP=  359  FN=   2  P=0.065  R=0.714  F1=0.119
+[7/140]  rate=5%  seed=9999  n=  500  infector_present=   18  TP=   13  FP=  385  FN=   0  P=0.033  R=0.722  F1=0.063
+[8/140]  rate=5%  seed=   2  n=  500  infector_present=   34  TP=   20  FP=  370  FN=   2  P=0.051  R=0.588  F1=0.094
+[9/140]  rate=5%  seed=   7  n=  500  infector_present=   19  TP=    7  FP=  381  FN=   5  P=0.018  R=0.368  F1=0.034
+[10/140]  rate=5%  seed=  13  n=  500  infector_present=   25  TP=   15  FP=  365  FN=   1  P=0.039  R=0.600  F1=0.074
+[11/140]  rate=5%  seed=  21  n=  500  infector_present=   16  TP=   11  FP=  375  FN=   1  P=0.028  R=0.688  F1=0.055
+[12/140]  rate=5%  seed=  50  n=  500  infector_present=   14  TP=   11  FP=  366  FN=   1  P=0.029  R=0.786  F1=0.056
+[13/140]  rate=5%  seed=  77  n=  500  infector_present=   25  TP=   13  FP=  383  FN=   1  P=0.033  R=0.520  F1=0.062
+[14/140]  rate=5%  seed= 100  n=  500  infector_present=   26  TP=   17  FP=  359  FN=   2  P=0.045  R=0.654  F1=0.085
+[15/140]  rate=5%  seed= 200  n=  500  infector_present=   34  TP=   16  FP=  395  FN=   2  P=0.039  R=0.471  F1=0.072
+[16/140]  rate=5%  seed= 300  n=  500  infector_present=   33  TP=   17  FP=  370  FN=   4  P=0.044  R=0.515  F1=0.081
+[17/140]  rate=5%  seed= 500  n=  500  infector_present=   25  TP=   15  FP=  395  FN=   0  P=0.037  R=0.600  F1=0.069
+[18/140]  rate=5%  seed= 777  n=  500  infector_present=   19  TP=   11  FP=  388  FN=   1  P=0.028  R=0.579  F1=0.053
+[19/140]  rate=5%  seed=2000  n=  500  infector_present=   36  TP=   16  FP=  392  FN=   3  P=0.039  R=0.444  F1=0.072
+[20/140]  rate=5%  seed=5000  n=  500  infector_present=   24  TP=   10  FP=  367  FN=   5  P=0.027  R=0.417  F1=0.050
+[21/140]  rate=10%  seed=   4  n= 1000  infector_present=   93  TP=   49  FP=  791  FN=   3  P=0.058  R=0.527  F1=0.105
+[22/140]  rate=10%  seed=  42  n= 1000  infector_present=   97  TP=   48  FP=  793  FN=  10  P=0.057  R=0.495  F1=0.102
+[23/140]  rate=10%  seed= 123  n= 1000  infector_present=  112  TP=   63  FP=  772  FN=   5  P=0.075  R=0.562  F1=0.133
+[24/140]  rate=10%  seed= 456  n= 1000  infector_present=   98  TP=   53  FP=  788  FN=   4  P=0.063  R=0.541  F1=0.113
+[25/140]  rate=10%  seed= 789  n= 1000  infector_present=   99  TP=   52  FP=  786  FN=   5  P=0.062  R=0.525  F1=0.111
+[26/140]  rate=10%  seed=1234  n= 1000  infector_present=   85  TP=   46  FP=  797  FN=   8  P=0.055  R=0.541  F1=0.099
+[27/140]  rate=10%  seed=9999  n= 1000  infector_present=   92  TP=   44  FP=  792  FN=   4  P=0.053  R=0.478  F1=0.095
+[28/140]  rate=10%  seed=   2  n= 1000  infector_present=   93  TP=   40  FP=  806  FN=   7  P=0.047  R=0.430  F1=0.085
+[29/140]  rate=10%  seed=   7  n= 1000  infector_present=   93  TP=   46  FP=  792  FN=   5  P=0.055  R=0.495  F1=0.099
+[30/140]  rate=10%  seed=  13  n= 1000  infector_present=   86  TP=   44  FP=  797  FN=  10  P=0.052  R=0.512  F1=0.095
+[31/140]  rate=10%  seed=  21  n= 1000  infector_present=  109  TP=   65  FP=  775  FN=  12  P=0.077  R=0.596  F1=0.137
+[32/140]  rate=10%  seed=  50  n= 1000  infector_present=  108  TP=   54  FP=  783  FN=   6  P=0.065  R=0.500  F1=0.114
+[33/140]  rate=10%  seed=  77  n= 1000  infector_present=   97  TP=   60  FP=  772  FN=   7  P=0.072  R=0.619  F1=0.129
+[34/140]  rate=10%  seed= 100  n= 1000  infector_present=   88  TP=   44  FP=  794  FN=   4  P=0.053  R=0.500  F1=0.095
+[35/140]  rate=10%  seed= 200  n= 1000  infector_present=   73  TP=   36  FP=  806  FN=   3  P=0.043  R=0.493  F1=0.079
+[36/140]  rate=10%  seed= 300  n= 1000  infector_present=  108  TP=   56  FP=  798  FN=   6  P=0.066  R=0.519  F1=0.116
+[37/140]  rate=10%  seed= 500  n= 1000  infector_present=  121  TP=   64  FP=  780  FN=   4  P=0.076  R=0.529  F1=0.133
+[38/140]  rate=10%  seed= 777  n= 1000  infector_present=  122  TP=   56  FP=  810  FN=   6  P=0.065  R=0.459  F1=0.113
+[39/140]  rate=10%  seed=2000  n= 1000  infector_present=   92  TP=   45  FP=  775  FN=   7  P=0.055  R=0.489  F1=0.099
+[40/140]  rate=10%  seed=5000  n= 1000  infector_present=   88  TP=   41  FP=  799  FN=   7  P=0.049  R=0.466  F1=0.088
+[41/140]  rate=20%  seed=   4  n= 2000  infector_present=  368  TP=  164  FP= 1610  FN=  18  P=0.092  R=0.446  F1=0.153
+[42/140]  rate=20%  seed=  42  n= 2000  infector_present=  386  TP=  168  FP= 1611  FN=  23  P=0.094  R=0.435  F1=0.155
+[43/140]  rate=20%  seed= 123  n= 2000  infector_present=  376  TP=  164  FP= 1606  FN=  25  P=0.093  R=0.436  F1=0.153
+[44/140]  rate=20%  seed= 456  n= 2000  infector_present=  418  TP=  166  FP= 1630  FN=  25  P=0.092  R=0.397  F1=0.150
+[45/140]  rate=20%  seed= 789  n= 2000  infector_present=  396  TP=  173  FP= 1610  FN=  28  P=0.097  R=0.437  F1=0.159
+[46/140]  rate=20%  seed=1234  n= 2000  infector_present=  432  TP=  192  FP= 1596  FN=  19  P=0.107  R=0.444  F1=0.173
+[47/140]  rate=20%  seed=9999  n= 2000  infector_present=  411  TP=  174  FP= 1620  FN=  18  P=0.097  R=0.423  F1=0.158
+[48/140]  rate=20%  seed=   2  n= 2000  infector_present=  406  TP=  184  FP= 1588  FN=  22  P=0.104  R=0.453  F1=0.169
+[49/140]  rate=20%  seed=   7  n= 2000  infector_present=  421  TP=  205  FP= 1556  FN=  29  P=0.116  R=0.487  F1=0.188
+[50/140]  rate=20%  seed=  13  n= 2000  infector_present=  476  TP=  216  FP= 1581  FN=  24  P=0.120  R=0.454  F1=0.190
+[51/140]  rate=20%  seed=  21  n= 2000  infector_present=  399  TP=  171  FP= 1635  FN=  20  P=0.095  R=0.429  F1=0.155
+[52/140]  rate=20%  seed=  50  n= 2000  infector_present=  358  TP=  152  FP= 1638  FN=  20  P=0.085  R=0.425  F1=0.142
+[53/140]  rate=20%  seed=  77  n= 2000  infector_present=  391  TP=  164  FP= 1640  FN=  22  P=0.091  R=0.419  F1=0.149
+[54/140]  rate=20%  seed= 100  n= 2000  infector_present=  433  TP=  200  FP= 1586  FN=  26  P=0.112  R=0.462  F1=0.180
+[55/140]  rate=20%  seed= 200  n= 2000  infector_present=  402  TP=  175  FP= 1610  FN=  14  P=0.098  R=0.435  F1=0.160
+[56/140]  rate=20%  seed= 300  n= 2000  infector_present=  418  TP=  174  FP= 1596  FN=  18  P=0.098  R=0.416  F1=0.159
+[57/140]  rate=20%  seed= 500  n= 2000  infector_present=  429  TP=  183  FP= 1591  FN=  24  P=0.103  R=0.427  F1=0.166
+[58/140]  rate=20%  seed= 777  n= 2000  infector_present=  339  TP=  146  FP= 1640  FN=  20  P=0.082  R=0.431  F1=0.137
+[59/140]  rate=20%  seed=2000  n= 2000  infector_present=  360  TP=  159  FP= 1608  FN=  28  P=0.090  R=0.442  F1=0.150
+[60/140]  rate=20%  seed=5000  n= 2000  infector_present=  407  TP=  191  FP= 1567  FN=  25  P=0.109  R=0.469  F1=0.176
+[61/140]  rate=30%  seed=   4  n= 3000  infector_present=  856  TP=  346  FP= 2405  FN=  38  P=0.126  R=0.404  F1=0.192
+[62/140]  rate=30%  seed=  42  n= 3000  infector_present=  929  TP=  370  FP= 2354  FN=  49  P=0.136  R=0.398  F1=0.203
+[63/140]  rate=30%  seed= 123  n= 3000  infector_present=  924  TP=  357  FP= 2384  FN=  43  P=0.130  R=0.386  F1=0.195
+[64/140]  rate=30%  seed= 456  n= 3000  infector_present=  910  TP=  395  FP= 2335  FN=  54  P=0.145  R=0.434  F1=0.217
+[65/140]  rate=30%  seed= 789  n= 3000  infector_present=  847  TP=  309  FP= 2423  FN=  40  P=0.113  R=0.365  F1=0.173
+[66/140]  rate=30%  seed=1234  n= 3000  infector_present=  912  TP=  363  FP= 2405  FN=  44  P=0.131  R=0.398  F1=0.197
+[67/140]  rate=30%  seed=9999  n= 3000  infector_present=  909  TP=  395  FP= 2330  FN=  53  P=0.145  R=0.435  F1=0.217
+[68/140]  rate=30%  seed=   2  n= 3000  infector_present=  886  TP=  383  FP= 2369  FN=  32  P=0.139  R=0.432  F1=0.211
+[69/140]  rate=30%  seed=   7  n= 3000  infector_present=  853  TP=  369  FP= 2348  FN=  39  P=0.136  R=0.433  F1=0.207
+[70/140]  rate=30%  seed=  13  n= 3000  infector_present=  833  TP=  332  FP= 2409  FN=  37  P=0.121  R=0.399  F1=0.186
+[71/140]  rate=30%  seed=  21  n= 3000  infector_present=  998  TP=  378  FP= 2346  FN=  49  P=0.139  R=0.379  F1=0.203
+[72/140]  rate=30%  seed=  50  n= 3000  infector_present=  989  TP=  402  FP= 2335  FN=  52  P=0.147  R=0.406  F1=0.216
+[73/140]  rate=30%  seed=  77  n= 3000  infector_present=  887  TP=  346  FP= 2402  FN=  41  P=0.126  R=0.390  F1=0.190
+[74/140]  rate=30%  seed= 100  n= 3000  infector_present=  932  TP=  411  FP= 2345  FN=  45  P=0.149  R=0.441  F1=0.223
+[75/140]  rate=30%  seed= 200  n= 3000  infector_present=  878  TP=  336  FP= 2370  FN=  51  P=0.124  R=0.383  F1=0.188
+[76/140]  rate=30%  seed= 300  n= 3000  infector_present=  931  TP=  373  FP= 2368  FN=  44  P=0.136  R=0.401  F1=0.203
+[77/140]  rate=30%  seed= 500  n= 3000  infector_present=  887  TP=  376  FP= 2364  FN=  44  P=0.137  R=0.424  F1=0.207
+[78/140]  rate=30%  seed= 777  n= 3000  infector_present=  930  TP=  368  FP= 2406  FN=  42  P=0.133  R=0.396  F1=0.199
+[79/140]  rate=30%  seed=2000  n= 3000  infector_present=  921  TP=  406  FP= 2350  FN=  47  P=0.147  R=0.441  F1=0.221
+[80/140]  rate=30%  seed=5000  n= 3000  infector_present=  841  TP=  341  FP= 2378  FN=  50  P=0.125  R=0.405  F1=0.192
+[81/140]  rate=50%  seed=   4  n= 5000  infector_present= 2484  TP=  921  FP= 3740  FN= 116  P=0.198  R=0.371  F1=0.258
+[82/140]  rate=50%  seed=  42  n= 5000  infector_present= 2427  TP=  874  FP= 3796  FN= 108  P=0.187  R=0.360  F1=0.246
+[83/140]  rate=50%  seed= 123  n= 5000  infector_present= 2511  TP=  884  FP= 3794  FN= 123  P=0.189  R=0.352  F1=0.246
+[84/140]  rate=50%  seed= 456  n= 5000  infector_present= 2512  TP=  935  FP= 3741  FN= 121  P=0.200  R=0.372  F1=0.260
+[85/140]  rate=50%  seed= 789  n= 5000  infector_present= 2499  TP=  885  FP= 3791  FN= 118  P=0.189  R=0.354  F1=0.247
+[86/140]  rate=50%  seed=1234  n= 5000  infector_present= 2394  TP=  902  FP= 3775  FN= 114  P=0.193  R=0.377  F1=0.255
+[87/140]  rate=50%  seed=9999  n= 5000  infector_present= 2462  TP=  874  FP= 3774  FN= 123  P=0.188  R=0.355  F1=0.246
+[88/140]  rate=50%  seed=   2  n= 5000  infector_present= 2455  TP=  931  FP= 3744  FN= 121  P=0.199  R=0.379  F1=0.261
+[89/140]  rate=50%  seed=   7  n= 5000  infector_present= 2417  TP=  873  FP= 3825  FN= 114  P=0.186  R=0.361  F1=0.245
+[90/140]  rate=50%  seed=  13  n= 5000  infector_present= 2561  TP=  962  FP= 3725  FN= 118  P=0.205  R=0.376  F1=0.265
+[91/140]  rate=50%  seed=  21  n= 5000  infector_present= 2484  TP=  899  FP= 3765  FN= 132  P=0.193  R=0.362  F1=0.252
+[92/140]  rate=50%  seed=  50  n= 5000  infector_present= 2510  TP=  920  FP= 3758  FN= 108  P=0.197  R=0.367  F1=0.256
+[93/140]  rate=50%  seed=  77  n= 5000  infector_present= 2421  TP=  910  FP= 3764  FN= 115  P=0.195  R=0.376  F1=0.257
+[94/140]  rate=50%  seed= 100  n= 5000  infector_present= 2565  TP=  926  FP= 3778  FN= 120  P=0.197  R=0.361  F1=0.255
+[95/140]  rate=50%  seed= 200  n= 5000  infector_present= 2573  TP=  898  FP= 3779  FN= 106  P=0.192  R=0.349  F1=0.248
+[96/140]  rate=50%  seed= 300  n= 5000  infector_present= 2522  TP=  926  FP= 3756  FN= 118  P=0.198  R=0.367  F1=0.257
+[97/140]  rate=50%  seed= 500  n= 5000  infector_present= 2509  TP=  906  FP= 3729  FN= 128  P=0.195  R=0.361  F1=0.254
+[98/140]  rate=50%  seed= 777  n= 5000  infector_present= 2516  TP=  832  FP= 3852  FN= 118  P=0.178  R=0.331  F1=0.231
+[99/140]  rate=50%  seed=2000  n= 5000  infector_present= 2455  TP=  935  FP= 3733  FN= 127  P=0.200  R=0.381  F1=0.263
+[100/140]  rate=50%  seed=5000  n= 5000  infector_present= 2565  TP=  989  FP= 3716  FN= 126  P=0.210  R=0.386  F1=0.272
+[101/140]  rate=70%  seed=   4  n= 7000  infector_present= 4836  TP= 1608  FP= 5006  FN= 229  P=0.243  R=0.333  F1=0.281
+[102/140]  rate=70%  seed=  42  n= 7000  infector_present= 4898  TP= 1714  FP= 4926  FN= 225  P=0.258  R=0.350  F1=0.297
+[103/140]  rate=70%  seed= 123  n= 7000  infector_present= 4990  TP= 1658  FP= 4997  FN= 210  P=0.249  R=0.332  F1=0.285
+[104/140]  rate=70%  seed= 456  n= 7000  infector_present= 4814  TP= 1558  FP= 5068  FN= 218  P=0.235  R=0.324  F1=0.272
+[105/140]  rate=70%  seed= 789  n= 7000  infector_present= 4909  TP= 1638  FP= 4991  FN= 216  P=0.247  R=0.334  F1=0.284
+[106/140]  rate=70%  seed=1234  n= 7000  infector_present= 4956  TP= 1681  FP= 4958  FN= 217  P=0.253  R=0.339  F1=0.290
+[107/140]  rate=70%  seed=9999  n= 7000  infector_present= 4812  TP= 1562  FP= 5083  FN= 212  P=0.235  R=0.325  F1=0.273
+[108/140]  rate=70%  seed=   2  n= 7000  infector_present= 4797  TP= 1617  FP= 5040  FN= 188  P=0.243  R=0.337  F1=0.282
+[109/140]  rate=70%  seed=   7  n= 7000  infector_present= 4961  TP= 1691  FP= 4944  FN= 231  P=0.255  R=0.341  F1=0.292
+[110/140]  rate=70%  seed=  13  n= 7000  infector_present= 4808  TP= 1664  FP= 4981  FN= 216  P=0.250  R=0.346  F1=0.291
+[111/140]  rate=70%  seed=  21  n= 7000  infector_present= 4878  TP= 1633  FP= 4996  FN= 216  P=0.246  R=0.335  F1=0.284
+[112/140]  rate=70%  seed=  50  n= 7000  infector_present= 5099  TP= 1717  FP= 4946  FN= 201  P=0.258  R=0.337  F1=0.292
+[113/140]  rate=70%  seed=  77  n= 7000  infector_present= 5018  TP= 1702  FP= 4942  FN= 213  P=0.256  R=0.339  F1=0.292
+[114/140]  rate=70%  seed= 100  n= 7000  infector_present= 4747  TP= 1551  FP= 5071  FN= 225  P=0.234  R=0.327  F1=0.273
+[115/140]  rate=70%  seed= 200  n= 7000  infector_present= 4893  TP= 1536  FP= 5095  FN= 218  P=0.232  R=0.314  F1=0.267
+[116/140]  rate=70%  seed= 300  n= 7000  infector_present= 4974  TP= 1648  FP= 4992  FN= 225  P=0.248  R=0.331  F1=0.284
+[117/140]  rate=70%  seed= 500  n= 7000  infector_present= 4880  TP= 1606  FP= 5043  FN= 203  P=0.242  R=0.329  F1=0.279
+[118/140]  rate=70%  seed= 777  n= 7000  infector_present= 4910  TP= 1642  FP= 5009  FN= 243  P=0.247  R=0.334  F1=0.284
+[119/140]  rate=70%  seed=2000  n= 7000  infector_present= 4816  TP= 1611  FP= 5042  FN= 199  P=0.242  R=0.335  F1=0.281
+[120/140]  rate=70%  seed=5000  n= 7000  infector_present= 4793  TP= 1579  FP= 5032  FN= 217  P=0.239  R=0.329  F1=0.277
+[121/140]  rate=100%  seed=   4  n=10000  infector_present= 9999  TP= 3060  FP= 6539  FN= 400  P=0.319  R=0.306  F1=0.312
+[122/140]  rate=100%  seed=  42  n=10000  infector_present= 9999  TP= 3092  FP= 6507  FN= 400  P=0.322  R=0.309  F1=0.316
+[123/140]  rate=100%  seed= 123  n=10000  infector_present= 9999  TP= 3115  FP= 6484  FN= 400  P=0.325  R=0.312  F1=0.318
+[124/140]  rate=100%  seed= 456  n=10000  infector_present= 9999  TP= 3095  FP= 6504  FN= 400  P=0.322  R=0.310  F1=0.316
+[125/140]  rate=100%  seed= 789  n=10000  infector_present= 9999  TP= 3062  FP= 6537  FN= 400  P=0.319  R=0.306  F1=0.312
+[126/140]  rate=100%  seed=1234  n=10000  infector_present= 9999  TP= 3074  FP= 6525  FN= 400  P=0.320  R=0.307  F1=0.314
+[127/140]  rate=100%  seed=9999  n=10000  infector_present= 9999  TP= 3065  FP= 6534  FN= 400  P=0.319  R=0.307  F1=0.313
+[128/140]  rate=100%  seed=   2  n=10000  infector_present= 9999  TP= 3069  FP= 6530  FN= 400  P=0.320  R=0.307  F1=0.313
+[129/140]  rate=100%  seed=   7  n=10000  infector_present= 9999  TP= 3061  FP= 6538  FN= 400  P=0.319  R=0.306  F1=0.312
+[130/140]  rate=100%  seed=  13  n=10000  infector_present= 9999  TP= 3104  FP= 6495  FN= 400  P=0.323  R=0.310  F1=0.317
+[131/140]  rate=100%  seed=  21  n=10000  infector_present= 9999  TP= 3097  FP= 6502  FN= 400  P=0.323  R=0.310  F1=0.316
+[132/140]  rate=100%  seed=  50  n=10000  infector_present= 9999  TP= 3084  FP= 6515  FN= 400  P=0.321  R=0.308  F1=0.315
+[133/140]  rate=100%  seed=  77  n=10000  infector_present= 9999  TP= 3126  FP= 6473  FN= 400  P=0.326  R=0.313  F1=0.319
+[134/140]  rate=100%  seed= 100  n=10000  infector_present= 9999  TP= 3074  FP= 6525  FN= 400  P=0.320  R=0.307  F1=0.314
+[135/140]  rate=100%  seed= 200  n=10000  infector_present= 9999  TP= 3101  FP= 6498  FN= 400  P=0.323  R=0.310  F1=0.316
+[136/140]  rate=100%  seed= 300  n=10000  infector_present= 9999  TP= 3083  FP= 6516  FN= 400  P=0.321  R=0.308  F1=0.315
+[137/140]  rate=100%  seed= 500  n=10000  infector_present= 9999  TP= 3078  FP= 6521  FN= 400  P=0.321  R=0.308  F1=0.314
+[138/140]  rate=100%  seed= 777  n=10000  infector_present= 9999  TP= 3092  FP= 6507  FN= 400  P=0.322  R=0.309  F1=0.316
+[139/140]  rate=100%  seed=2000  n=10000  infector_present= 9999  TP= 3087  FP= 6512  FN= 400  P=0.322  R=0.309  F1=0.315
+[140/140]  rate=100%  seed=5000  n=10000  infector_present= 9999  TP= 3059  FP= 6540  FN= 400  P=0.319  R=0.306  F1=0.312
+
+All done. 140 runs saved to /Users/azrakaraman/Desktop/disease/subsampling_realistic_results.csv
+Plot saved: /Users/azrakaraman/Desktop/disease/subsampling_realistic_plot.png
